@@ -286,7 +286,7 @@ void i2c_slave(const i2c_callback_group_t *const i2c_cbg,
                             // If the master supports multi-master, then this should
                             // ensure that it does not begin another transaction until
                             // the application code here has returned.
-                            port_out(p_scl, 0);
+                            // port_out(p_scl, 0);
 
                             i2c_cbg->stop_bit(i2c_cbg->app_data);
 
